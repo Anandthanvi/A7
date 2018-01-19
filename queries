@@ -1,0 +1,6 @@
+1. We have added the preferred language column in the user's table so that system can take default language for the email templates and for User Interface from that preferred language.
+2. When saving customer details in database, we need to save the cotio_code_id, user_id, firstname, lastname in shipping_details table. This is because we needed a relation between user and cotio code at the time of email notification.
+3. Process status column is added to cotio_code table instead of cotio_product table.
+4. In order's table, we have changed the cotio_product_id to cotio_code_id. It is needed for donation because cotio code can be donated before the handler inputs the details and make a cotio_product.
+5. We need to discuss transaction and invoice process. We have made tables but it is required to be discussed.
+
